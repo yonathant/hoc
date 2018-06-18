@@ -250,7 +250,7 @@ li#logo {
 }
 .category {
     display: inline-block;
-    padding: 0 50px;
+    padding: 0 50px 50px;
     color: #F6F4F4;
     position: relative;
 }
@@ -353,7 +353,7 @@ li#logo {
 .row {
     margin: 70px auto;
     text-align: center;
-    box-sizing: border-box;
+    box-sizing: content-box;
 }
 .bubble-li {
     display: inline-block;
@@ -580,6 +580,7 @@ footer:before {
 .siteMap {
     text-align: center;
     margin-right: 20px;
+    margin-top: 20px;
 }
 .siteMap>li {
     display: inline-block;
@@ -658,6 +659,10 @@ p.category-desc {
     list-style: none;
     text-align: right;
     font-size: 20px;
+}
+.description-list p {
+    width: 150px;
+    border-top: 1px solid rgb(200, 200, 200);
 }
 .divider img {
     width: 300px;
@@ -879,7 +884,7 @@ p.category-desc {
 }
 #section7 {
     overflow: hidden;
-    margin-top: -120px;
+    margin-top: -90px;
     margin-bottom: -140px;
     height: 100%;
     padding: 15vh 0 30vh;
@@ -936,24 +941,28 @@ p.category-desc {
 .taki-section2 p {
     margin: 12px 0;
 }
-.taki-first-list li {
-    margin: 8px 30px 8px 0;
-    display: list-item;
+.taki-first-list {
+    position: relative;
 }
-.taki-first-list li:first-child, .taki-section3 p:nth-child(2){
-    list-style-image: url("../images/taki-l1.png");
+.taki-first-list li {
+    margin: 20px 0;
+    padding: 12px;
+    display: inline-block;
+    width: 205px;
+    vertical-align: top;
+    background-color: #F6F4F4;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 17px 40px -28px #333333;
+    box-shadow: 0 17px 40px -28px #333333;
+}
+.taki-first-list li:first-child{
     color: #46519A;
 }
-.taki-first-list li:nth-child(2), .taki-section3 p:nth-child(3) {
-    list-style-image: url("../images/taki-l2.png");
+.taki-first-list li:nth-child(2){
     color: #C11D1E;
 }
-.taki-first-list li:nth-child(3), .taki-section3 p:nth-child(4) {
-    list-style-image: url("../images/taki-l3.png");
+.taki-first-list li:nth-child(3){
     color: #175936;
-}
-.taki-hands-list li:nth-last-child(2), .taki-hands-list li:nth-last-child(3) {
-    width: 300px;
 }
 .taki-hands h2 {
     margin: 40px;
