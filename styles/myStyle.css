@@ -1037,13 +1037,22 @@ p.category-desc {
     left: 22vw;
     z-index: -99;
 }
-.siteMap-categorylist::after {
+/* .siteMap-categorylist::after {
     border-bottom: 1px #999 solid;
     content: '';
     position: absolute;
     width: 470px;
     top: 94%;
     left: 33.7%;
+    z-index: -99;
+} */
+.pseudo::after {
+    border-bottom: 1px #999 solid;
+    content: '';
+    position: absolute;
+    width: 473px;
+    left: -51.8%;
+    top: -10px;
     z-index: -99;
 }
 .siteMap-card a {
