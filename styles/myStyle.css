@@ -351,20 +351,19 @@ li#logo {
     font-weight: 500;
 }
 .row {
-    margin: 70px auto;
+    margin: 0 auto;
     text-align: center;
-    box-sizing: content-box;
+    box-sizing: border-box;
 }
 .bubble-li {
     display: inline-block;
     list-style: none;
-    padding: 0 20px;
 }
 .bubble {
-    height: 300px;
+    height: 280px;
     width: 200px;
-    padding: 20px;
-    margin: 20px 0 80px 0;
+    padding: 20px 10px;
+    margin: 60px 8px 100px 8px;
     border-radius: 15px;
     text-align: center;
     line-height: 1.5;
@@ -374,6 +373,7 @@ li#logo {
     background-color: white;
     transition: 0.2s ease all;
     transition-delay: 0.08s;
+    background-repeat: no-repeat;
 }
 .bubble::after {
     content: "";
@@ -400,7 +400,7 @@ li#logo {
     text-decoration: none;
 }
 .bubble img {
-    height: 50px;
+    height: 40px;
     margin-top: 20px;
     margin-bottom: 5px;
 }
@@ -412,7 +412,7 @@ li#logo {
 }
 .bubble p {
     text-align: right;
-    padding-top: 20px;
+    padding-top: 5%;
 }
 .first-bubble h3 {
     color: #A37FB3;
@@ -661,8 +661,11 @@ p.category-desc {
     font-size: 20px;
 }
 .description-list p {
-    width: 150px;
+    width: auto;
     border-top: 1px solid rgb(200, 200, 200);
+}
+.description-list span {
+    font-style: italic
 }
 .divider img {
     width: 300px;
@@ -841,7 +844,7 @@ p.category-desc {
     overflow: hidden;
     margin-top: -10px;
     height: 100%;
-    padding: 15vh 0 30vh;
+    padding: 15vh 0 22vh;
 }
 #section5 h2 {
     color: #f6f4f6!important;
