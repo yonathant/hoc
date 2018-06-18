@@ -844,7 +844,7 @@ p.category-desc {
     overflow: hidden;
     margin-top: -10px;
     height: 100%;
-    padding: 15vh 0 22vh;
+    padding: 15vh 0 26vh;
 }
 #section5 h2 {
     color: #f6f4f6!important;
@@ -948,8 +948,8 @@ p.category-desc {
     position: relative;
 }
 .taki-first-list li {
-    margin: 20px 0;
-    padding: 12px;
+    margin: 20px 7px;
+    padding: 5px;
     display: inline-block;
     width: 205px;
     vertical-align: top;
@@ -958,13 +958,13 @@ p.category-desc {
     -webkit-box-shadow: 0 17px 40px -28px #333333;
     box-shadow: 0 17px 40px -28px #333333;
 }
-.taki-first-list li:first-child{
+.taki-first-list li:first-child, .taki-section3 p:nth-child(2){
     color: #46519A;
 }
-.taki-first-list li:nth-child(2){
+.taki-first-list li:nth-child(2), .taki-section3 p:nth-child(3){
     color: #C11D1E;
 }
-.taki-first-list li:nth-child(3){
+.taki-first-list li:nth-child(3), .taki-section3 p:nth-child(4){
     color: #175936;
 }
 .taki-hands h2 {
@@ -997,7 +997,9 @@ p.category-desc {
     -webkit-box-shadow: 0 26px 40px -28px #333333;
     box-shadow: 0 26px 40px -28px #333333;
 }
-
+.taki-hands-list li:nth-child(6), .taki-hands-list li:nth-child(7) {
+    width: 300px;
+}
 /*Site Map*/
 .siteMap-section {
     margin-bottom: 20px;
@@ -1039,9 +1041,9 @@ p.category-desc {
     border-bottom: 1px #999 solid;
     content: '';
     position: absolute;
-    width: 32.8vw;
-    top: 17vh;
-    left: 33.6vw;
+    width: 470px;
+    top: 94%;
+    left: 33.7%;
     z-index: -99;
 }
 .siteMap-card a {
@@ -1050,15 +1052,16 @@ p.category-desc {
 .clear::before {
     content: '';
     position: absolute;
-    height: 100vh;
+    display: block;
+    height: 90%;
     border-left: 1px #999 solid!important;
-    left: 8vw;
-    top: -1.1vh;
+    left: 50%;
+    top: -1%;
     z-index: -99;
 }
 .clear:nth-child(3)::before {
-    height: 105vh;
-    top: -8vh;
+    height: 95%;
+    top: -6.9%;
     z-index: -99;
 }
 .card-pic {
