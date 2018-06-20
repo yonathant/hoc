@@ -135,11 +135,6 @@ html, body { /*main html tyles*/
 .nav-ul li:hover a {
     color: #175936;
 }
-.active {
-    color: #175936;
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
-}
 li#logo {
     background: url("../images/logo.svg");
     background-size: contain;
