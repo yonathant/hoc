@@ -915,6 +915,10 @@ p.category-desc {
 .block-list li{
     display: block;
 }
+.rummy-section2 ol li {
+    display: list-item;
+    list-style-type: decimal;
+}
 #section6 h2 {
     text-align: center;
     font-size: 26px;
