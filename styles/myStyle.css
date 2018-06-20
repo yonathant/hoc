@@ -764,7 +764,7 @@ p.category-desc {
     border: 2px solid white;
 }
 .poker-section2, .rummy-section2, .rummy-how-to, .taki-section2 {
-    width: 700px;
+    max-width: 700px;
     margin: 0 auto;
     line-height: 1.7;
     font-size: 20px;
