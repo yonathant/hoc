@@ -20,13 +20,17 @@ $( document ).ready(function() {
   });
 
   /*Quiz*/
-  (function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(d.getElementById(id))return;js=d.createElement(s);js.id=id;js.src='https://embed.playbuzz.com/sdk.js';fjs.parentNode.insertBefore(js,fjs);}(document,'script','playbuzz-sdk'));
-    /*
-
+    (function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(d.getElementById(id))return;js=d.createElement(s);js.id=id;js.src='https://embed.playbuzz.com/sdk.js';fjs.parentNode.insertBefore(js,fjs);}(document,'script','playbuzz-sdk'));
+  
+    $(".focus").focus(function() {
+        $(".all-games-list").addClass("focused");
+    });
+    $("#logo a, .nav-ul>li:nth-child(3) a").focus(function() {
+        $(".all-games-list").removeClass("focused");
+    });
+  /*
 Smooth scrolling
 */
-
-
 
 // $(".nav-ul li").click(function() {
 // $(".nav-ul a").removeClass("active");
@@ -64,4 +68,3 @@ Smooth scrolling
 // });
 
 });
-
