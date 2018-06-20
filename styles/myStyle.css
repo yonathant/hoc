@@ -160,7 +160,6 @@ li#logo {
 }
 .scroll li#logo{
     padding: 10px 0;
-    transition-delay: 0.08s;
 }
 .scroll .nav-ul {
     padding: 0;
@@ -198,13 +197,16 @@ li#logo {
     right: 50%;
     margin: 0 -50vw;
 }
-.all-games-list {
+.all-games-list { /*inner pages nav list*/
     display: none;
     position: absolute;
     background-color: rgba(255, 255, 255, 0.9);
     -webkit-box-shadow: 0 15px 30px -21px #333333;
     box-shadow: 0 15px 30px -21px #333333;
     border-radius: 10px;
+}
+.focused {
+    display: block;
 }
 #main-nav .all-games-list li{
     padding: 5px 15px;
@@ -826,7 +828,7 @@ p.category-desc {
     top: 80px;
 }
 .hands-list {
-    width: 800px;
+    width: 780px;
     margin: 0 auto;
 }
 .hands-sec {
@@ -1024,6 +1026,10 @@ p.category-desc {
     -webkit-box-shadow: 0 25px 40px -25px #000000;
     box-shadow: 0 25px 40px -25px #000000;
 }
+.siteMap-categorylist {
+    max-width: 976px;
+    margin: 0 auto;
+}
 .siteMap-categorylist li {
     display: inline-block;
     list-style: none;
@@ -1033,8 +1039,8 @@ p.category-desc {
     border-bottom: 1px #999 solid;
     content: '';
     position: absolute;
-    width: 55vw;
-    left: 22vw;
+    width: 80%;
+    left: 10%;
     z-index: -99;
 }
 /* .siteMap-categorylist::after {
@@ -1050,8 +1056,8 @@ p.category-desc {
     border-bottom: 1px #999 solid;
     content: '';
     position: absolute;
-    width: 473px;
-    left: -51.8%;
+    width: 472px;
+    left: -51.7%;
     top: -10px;
     z-index: -99;
 }
