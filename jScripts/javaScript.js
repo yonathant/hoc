@@ -28,43 +28,9 @@ $( document ).ready(function() {
     $("#logo a, .nav-ul>li:nth-child(3) a").focus(function() {
         $(".all-games-list").removeClass("focused");
     });
-  /*
-Smooth scrolling
-*/
-
-// $(".nav-ul li").click(function() {
-// $(".nav-ul a").removeClass("active");
-//   $(this).addClass("active");
-//    $('html, body').animate({
-//     scrollTop: $(window).scrollTop() + 100});
-// return false;
-// });
-
-// $(".nav-ul li:nth-child(2), .down-arrow").click(function() {
-//   $(".nav-ul a").removeClass("active");
-//   $(".nav-ul li:nth-child(2) a, .down-arrow").addClass("active");
-//    $('html, body').animate({
-//        scrollTop:        $("#section2").offset().top+100
-//    }, 300);
-// return false;
-// });
-
-// $(".nav-ul li:nth-child(3)").click(function() {
-//   $(".nav-ul a").removeClass("active");
-//   $(".nav-ul li:nth-child(3) a").addClass("active");
-//    $('html, body').animate({
-//        scrollTop:        $("#section3").offset().top-70
-//    }, 300);
-// return false;
-// });
-
-// $(".nav-ul li:nth-child(4)").click(function() {
-//   $(".nav-ul a").removeClass("active");
-// $(".nav-ul li:nth-child(4) a").addClass("active");
-//    $('html, body').animate({
-//        scrollTop:        $("#section4").offset().top-60
-//    }, 300);
-// return false;
-// });
+    $(".focus").mouseleave(function() {
+        $(".all-games-list").removeClass("focused");
+    });
+    
 
 });
